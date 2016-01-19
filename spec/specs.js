@@ -21,4 +21,7 @@ describe('leapYear', function() {
   it("is false if number is NaN ", function() {
     expect(leapYear(NaN)).to.equal(false);
   });
+  it("is false if number is zero ", function() {
+    expect(leapYear(0)).to.equal(false);
+  });
 });
